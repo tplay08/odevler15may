@@ -1,2 +1,84 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import random 
+import string
+print( "16 Haneli şifre oluşturma programına Hoşgeldiniz! ")
+
+lower= 'qwertyuıopğüadfghjklşizxcvbnmöç'
+upper= lower.upper()
+sayilar= '0123456789'
+işaretler= '!^+%&/()=?_/*-'
+
+hepsi= [lower , upper ,sayilar , işaretler]
+#print(hepsi)
+
+sifre= []
+for j in range(4):
+  for i in range(4):
+    sifre+= hepsi[j][random.randint(0,9)]
+
+random.shuffle(sifre)
+new_sifre=  " "
+new_sifre= new_sifre.join(sifre)
+print("Şifreniz hazır:  ", new_sifre)
+
+
+
+print("Bu uygulamada yazarak aylık giderlerinizi öğrenebilirsiniz ve şu şekilde yazmalısınız: 'elektirikfaturası','kırtasiye','sufaturası',  'mutfakgideri','giyecek'.")
+def elektirikfaturası():
+	print("Ekektirik faturasının fiyatı: 180")
+def kırtasiye():
+	print("Kırtasiye faturası fityatı: 350")
+def sufaturası():
+	print("Su faturasının fiyatı: 120TL")
+def mutfakgideri():
+	print("Mutfak giderinin fiyatı: 1000TL")
+def giyecek():
+	print("Giyecek faturasının fiyatı: 450TL")
+b=input("Lütfen görmek istediğiniz gideri girin")
+if b=="sufaturası":
+	sufaturası()
+elif b=="elektirikfaturası":
+	elektirikfaturası()
+elif b=="kırtasiye":
+	kırtasiye()
+elif b=="mutfakgideri":
+	mutfakgideri()
+elif b=="giyecek":
+	giyecek()
+else:
+	print("Değeri olmayan bir karakter dizisi girdiniz.")
+  
+  
+  
+  
+  import random
+sayac=0 
+randomNumber= random.randint(0,100)
+while True:
+  sums=0
+  sayac= sayac+1
+  for i in range(3):
+    sums= sums + int(input("Lütfen sayı giriniz:" + str(i+1) + " "));
+  if hak== randomNumber:
+    break
+
+print(randomNumber)
+print(sayac, "hamlede sayıyı oluşturdunuz. Tebrikler...")
+
+
+
+
+
+
+import time
+c=[]
+print("Meslek bulma uygulamasına hoşgeldiniz.\nBu oyun bazı sorular soracak ve bu sorulara sorduğunuz cevaplara göre en sonda size mesleğinizi söyleyeceğiz.")
+def sorubir():
+	print("En çok hangi dersi seviyorsunuz.\nA)Bilgisayar\nB)Biyoloji\nC)Fizik")
+	a=input("Cevabınızı yazınız:")
+	print("En çok hangisini izlemek ilginizi çekiyor.\nA)Yazılım videoları izlemek\nB)Motor viseoları izlemek\nC)Ameliyat videoları izlemek")
+	b=input("Cevabınızı yazınız:")
+	if a=='A' and b=='A':
+		print("Yazılımcısınız")
+	elif a=='B' and b=='A':
+		print("Elektirik elektronik mühendisisiniz.")
+
